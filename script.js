@@ -130,9 +130,6 @@ function getComputerChoice() {
     return computerChoice;
 }
 
-
-
-
 function playRound(humanChoice,computerChoice) {            
             
     let msg = "";
@@ -171,7 +168,3 @@ function playRound(humanChoice,computerChoice) {
     resultList.appendChild(resultMsg);
     resultMsg.textContent = msg;        
 }
-
-
-        
-
