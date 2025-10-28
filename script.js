@@ -5,7 +5,7 @@ document.body.append(btnRock);
 btnRock.classList.add('btn');
 
 let divSpace01 = document.createElement("div")
-divSpace01.style.height = '500 px';
+divSpace01.style.height = '30px';
 document.body.append(divSpace01);
 
 let btnPaper = document.createElement("button");
@@ -14,7 +14,7 @@ document.body.append(btnPaper);
 btnPaper.classList.add('btn');
 
 let divSpace02 = document.createElement("div")
-divSpace02.style.height = '500 px';
+divSpace02.style.height = '30px';
 document.body.append(divSpace02);
 
 let btnScissor = document.createElement("button");
@@ -23,7 +23,7 @@ document.body.append(btnScissor);
 btnScissor.classList.add('btn');
 
 let divSpace03 = document.createElement("div")
-divSpace03.style.height = '500 px';
+divSpace03.style.height = '30px';
 document.body.append(divSpace03);
 
 
@@ -85,7 +85,7 @@ buttons.forEach(button => {
             finalMsg = document.createElement('li');
             resultList.appendChild(finalMsg);
             finalMsg.textContent = "You win! Congrats!";
-            alert("You win! Congrats!");   
+            alert("You win! Congrats!\n\nFinal Score:\nYou: " + humanScore + "\nComputer: " + computerScore);  
             
             let removeBullets = document.querySelectorAll("li");
             removeBullets.forEach(element => {
@@ -100,7 +100,7 @@ buttons.forEach(button => {
             finalMsg = document.createElement('li');
             resultList.appendChild(finalMsg);
             finalMsg.textContent = "You lose! Try again.";
-            alert("You lose! Try again.");
+            alert("You lose! Try again.\n\nFinal Score:\nYou: " + humanScore + "\nComputer: " + computerScore);
             
             let removeBullets = document.querySelectorAll("li");
             removeBullets.forEach(element => {
